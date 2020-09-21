@@ -1,4 +1,4 @@
-# VM-Series in an Availability Set Template (@michelvankessel FORK)
+# VM-Series in an Availability Set Template
 
 -------------------------------------------------------------
 TODO
