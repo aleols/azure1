@@ -4,7 +4,7 @@
 	"parameters": {
 		"location": {
 			"type": "string",
-			"defaultValue": "West Europe",
+			"defaultValue": "Norway East",
 			"metadata": {
 				"description": "region of resources"
 			}
@@ -20,7 +20,7 @@
 			"metadata": {
 				"description": "The type of the Storage Account created"
 			},
-			"defaultValue": "Premium_LRS"
+			"defaultValue": "Standard_LRS"
 		},
 		"storageAccountNewOrExisting": {
 			"type": "string",
@@ -89,7 +89,7 @@
 		},
 		"imageSku": {
 			"type": "string",
-			"defaultValue": "byol",
+			"defaultValue": "bundle1",
 			"allowedValues": ["byol",
 			"bundle1",
 			"bundle2"],
@@ -99,7 +99,7 @@
 		},
 		"vmSize": {
 			"type": "string",
-			"defaultValue": "Standard_DS4_v2",
+			"defaultValue": "Standard_DS3_v2",
 			"allowedValues": ["Standard_DS4_v2",
 			"Standard_DS5_v2","Standard_DS3_v2"
 			],
