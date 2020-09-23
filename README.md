@@ -1,24 +1,11 @@
 # VM-Series in an Availability Set Template
 
--------------------------------------------------------------
-TODO
-- 20170623 - made a fork to change the following things
-1. add five more NICS and attach to VM-series - DONE! 11-07-2017
-2. make choice at least vm choice that support +4 nics (e.g. DS4_v2) - DONE! 11-07-2017
-3. Change to Managed Disks - DONE! 13-07-2017
-4. Change Availability set with managed disk support - DONE! 13-07-2017
-
-- 20170717 - cleanup config
-1. Take out storageaccount config
-2. change SSH public key json to include managed disk and correct API version
-
-Bye
 ------------------------------------------------------------
 
 This ARM template deploys a VM-Series next generation firewall VM in an availability set of a Azure resource group. It lets you select your:
 - Username and Password, or SSH key
 - Resource Group and Storage Account inside it
-- VNET's CIDR (/16 range) with 8 subnets: Mgmt (1.0/24), Untrust (2.0/24), Trust (3.0/24), DMZ (4.0/24), ExpressRoute (5.0/24), and 3 futures subnets
+- VNET's CIDR (/16 range) with 8 subnets: Mgmt (1.0/24), Untrust (2.0/24), Trust (3.0/24)
 - Azure VM size and login for VM-Series (BYOL edition) with 8 NIC's that map to above subnets
 - Specify PAN-OS version and VM-Series model: BYOL, hourly pay-as-you-go (PAYG)Bundle 1 or Bundle 2
 - Specify the Azure Availability Set (required parameter)
